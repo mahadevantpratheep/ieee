@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}   
+body{
+    height: 100vh;
+}
+.open{
+    position: fixed;
+    color: #fff;
+    margin: 15px 15px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scrolling */
+    scroll-behavior: smooth;
+    
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    widows: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+section#home{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('home_bg%20(1).jpg') no-repeat center center/cover;
+}
+section#news{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('news_bg.jpg')no-repeat center center/cover;
+}
+section#team{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('team_bg.jpg') no-repeat center center/cover;
+}
+.logo{
+    position: fixed;
+    background-blend-mode: screen;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Comfortaa';
+    top: 10px;
+    right: 20px;
+    text-align: left;
+}
+h1{
+    color: #f0ebeb;
+    font-weight: 600;
+    line-height: 1.3;
+}
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Slider */
+        .showSlide {  
+            flex: 50%;
+            height: 100vh;
+            background-color: #214588;
+        }  
+            .showSlide img {  
+                height:100vh;
+                width: 50vw;
+            }  
+        .slidercontainer {  
+            overflow-y:hidden;
+            overflow-x: auto;
+            width: 100%; 
+        }  
+        .left, .right {  
+            cursor: pointer;  
+            position: absolute;
+            top:124vw;
+            width: auto;  
+            padding: 16px;  
+            margin-top: -22px;  
+            color: white;  
+            font-weight: bold;  
+            font-size: 60px;
+            transition: 0.6s ease;  
+            border-radius: 0 3px 3px 0;  
+        }  
+        .row {
+          display: flex;
+        }
+
+        .column {
+        }
+        .right {  
+            right: 0;  
+            border-radius: 3px 0 0 3px;  
+        }  
+            .left:hover, .right:hover {  
+                background-color: rgba(115, 115, 115, 0.8); 
+            }  
+        .content {  
+            color: #eff5d4;  
+            font-size: 35px;
+            margin-left: 20px;
+            text-align: left;
+        }  
+        .active {  
+            background-color: #717171;  
+        }  
+        /* Fading animation */  
+        .fade {  
+            -webkit-animation-name: fade;  
+            -webkit-animation-duration: 1.5s;  
+            animation-name: fade;  
+            animation-duration: 1.5s;  
+        }  
+        @-webkit-keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+  
+        @keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }

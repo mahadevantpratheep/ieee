@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>IEEE SB NITW</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.css">
+    </head>
+    <body>
+    <!--Navbar-->
+        <div class="container">
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#home">Home</a>
+              <a href="#news">News</a>
+              <a href="#events">Events</a>
+              <a href="#team">Team</a>
+            </div>
+            <!-- Use any element to open the sidenav -->
+            <span class="open" onclick="openNav()"><i style="font-size:24px" class="fa">&#xf039;</i></span>
+            <section id="home">
+                <div class="logo">
+                    IEEE sb nitw
+                </div>
+                <h1>IEEE is
+                  <span
+                     class="txt-rotate"
+                     data-period="2000"
+                     data-rotate='[ "awesome.", "simple.", "innovate." ]'></span>
+                </h1>
+            </section>
+            <section id="news">
+                <h1>News</h1>
+            </section>
+            <section id="events">
+                    <div class="slidercontainer">  
+        <div class="showSlide fade">
+           <div class="row">
+              <div class="column">
+                  <img src="home_bg%20(1).jpg" />
+               </div>
+              <div class="column">
+                  <div class="content">Slide1 heading</div>
+               </div>
+            </div>
+              
+        </div>  
+        <div class="showSlide fade">  
+            <div class="row">
+                <div class="column">
+                  <img src="home_bg%20(1).jpg" />
+                </div>
+              <div class="column">
+                  <div class="content">Slide2 heading</div>
+               </div>
+            </div>  
+        </div>
+        <div class="showSlide fade">  
+            <div class="row">
+              <div class="column">
+                  <img src="events_bg.jpg" />
+               </div>
+              <div class="column">
+                  <div class="content">Slide3  ading</div>
+               </div>
+            </div> 
+        </div>
+        <div class="showSlide fade">  
+            <div class="row">
+              <div class="column">
+                  <img src="news_bg.jpg" />
+               </div>
+              <div class="column">
+                  <div class="content">Slide4  ading</div>
+               </div>
+            </div>  
+        </div>  
+        <!-- Navigation arrows -->  
+        <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+    </div>
+            </section>
+            <section id="team">
+                <h1>Team</h1>
+            </section>
+        </div>
+        <script type="text/javascript" src="navbar.js"></script>
+        <script type="text/javascript" src="typewriter.js"></script>
+        <script type="text/javascript" src="slider.js"></script>
+    </body>
+</html>
